@@ -62,6 +62,11 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  header ul li a {
+    margin: -9px;
+  }
+}
 header i {
   font-size: 34px;
   color: white;
@@ -86,10 +91,12 @@ header .mega {
   top: 14%;
   float: left;
   background: white;
+
   opacity: 0;
   transition: 1s;
- 
+  left: 169px;
   top: 0px;
+  z-index: -4;
 }
 header .mega .links {
   display: flex;
