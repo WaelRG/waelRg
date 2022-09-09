@@ -27,9 +27,9 @@
             
             <ul>
                 <li>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-user" onclick="myfun()" ></i></a>
                 <!-- start mega menue -->
-                <div class="mega">
+                <div class="mega" id="mg">
                     <ul class="links">
                         <li><a href="#"> Home</a></li>
                         <li><a href="#"> photo</a></li>
@@ -42,7 +42,7 @@
                 <!-- end mega menue -->
                 </li>
                 <li><a href="#input"> login </a></li>
-                <li> <a href="#Servises"> Servises </a> </li>
+                <li> <a href="#Servises" > Servises </a> </li>
                 <li> <a href="#About"> About</a></li>
             </ul>
             <form action="">
@@ -54,4 +54,30 @@
 
         </div>
     </header>
+    <script>
+        function myfun()
+        {
+            
+            var mega=document.getElementById("mg");
+           
+            if(mega.style.opacity==0)
+            {
+                mega.style.opacity=1;
+            
+            mega.style.zIndex=100;
+            mega.style.left= -3;
+
+            }
+            else
+            mega.style.opacity = 0;
+            }
+            
+        
+    
+          
+        
+   
+    </script>
+    </body>
+    </html>
     <!-- end header -->
