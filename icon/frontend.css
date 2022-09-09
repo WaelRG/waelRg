@@ -94,7 +94,7 @@ header .mega {
 
   opacity: 0;
   transition: 1s;
-  left: 169px;
+  left: 30px;
   top: 0px;
   z-index: -4;
 }
@@ -116,11 +116,7 @@ header .mega .links li a {
 header .mega .links li a:hover {
   padding-left: 8px;
 }
-header ul > li:hover .mega {
-  opacity: 1;
-  z-index: 100;
-  left: -3px;
-}
+
 /* end mega menew */
 header ul li {
   margin: 20px;
