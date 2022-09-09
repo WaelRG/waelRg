@@ -13,12 +13,16 @@
 </head>
 <body>
     <!-- start header  -->
+   <div class="load" id="id">
+       <span></span>
+   </div>
+
     <header>
         <div class="container">
             
             <a href="#" class="logo">Wael <span>Rg</span></a>
             <ul>
-                <li><a href="#input"> log in </a></li>
+                <li><a href="#input"> login </a></li>
                 <li>   <a href="#Servises"> Servises </a> </li>
                   <li>  <a href="#About"> About</a></li>
                     </ul>
@@ -113,5 +117,16 @@
         </div>
     </footer>
     <!-- end footer -->
+    <script>
+    window.onload = function () {
+            var loade = document.getElementById("id");
+            document.body.style.overflow = "hidden";
+            setTimeout(function () {
+                loade.style.display = "none";
+                document.body.style.overflow = "auto";
+            }, 5000);
+        }
+        
+    </script>
 </body>
 </html>
