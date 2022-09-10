@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="icon/norm.css">
+    <link rel="stylesheet" href="icon/frontend.css">
+    <title>number</title>
+</head>
+
+<body>
+    <!-- start header  -->
+    <header>
+
+
+        <div class="container">
+
+            <a href="#" class="logo">Wael <span>Rg</span></a>
+
+
+
+
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user" onclick="myfun()"></i></a>
+                    <!-- start mega menue -->
+                    <div class="mega" id="mg">
+                        <ul class="links">
+                            <li><a href="#"> Home</a></li>
+                            <li><a href="photo.html"> photo</a></li>
+                            <li><a href="pass.html"> Edite password</a></li>
+                            <li><a href="#"> Helpe</a></li>
+                            <li><a href="#"> Edite number</a></li>
+                            <li><a href="#"> comment</a></li>
+                        </ul>
+                    </div>
+                    <!-- end mega menue -->
+                </li>
+                <li><a href="#input"> login </a></li>
+                <li> <a href="#Servises"> Servises </a> </li>
+                <li> <a href="#About"> About</a></li>
+            </ul>
+            <form action="">
+                <input type="search" name="" id="search" placeholder="Search hear">
+
+            </form>
+
+
+
+        </div>
+    </header>
+    <div class="input" id="input">
+
+        <div class="container">
+
+
+            <form action="">
+
+                <input type="number" placeholder="nuber old">
+                <input type="password" placeholder=" nuber new">
+                <button type="submit"> save</button>
+
+                </a>
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        function myfun() {
+
+            var mega = document.getElementById("mg");
+
+            if (mega.style.opacity == 0) {
+                mega.style.opacity = 1;
+            }
+
+
+            else {
+                mega.style.opacity = 0;
+            }
+            if (mega.style.zIndex == 100) {
+                mega.style.zIndex = -4;
+            }
+            else {
+                mega.style.zIndex = 100;
+            }
+            if (mega.style.left == "-3px") {
+                mega.style.left = "30px";
+            }
+            else
+                mega.style.left = "-3px";
+
+
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
+<!-- end header -->
