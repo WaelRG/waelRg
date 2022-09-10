@@ -33,7 +33,7 @@ li {
 .title {
   margin: 20px auto;
   text-align: center;
-  background: #2196f399;
+  background: linear-gradient(182deg, #272156, #636181);
   padding: 10px 15px;
   width: fit-content;
   border-radius: 20px;
@@ -109,7 +109,7 @@ header .mega {
 header .mega .links {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--color2);
+  border-bottom: 1px solid linear-gradient(182deg, #272156, #636181);
 }
 header .mega .links li {
   margin: 45px;
@@ -149,6 +149,7 @@ header ul li a {
 header ul li a:hover {
   color: #ffffffa1;
 }
+
 header form input {
   border: none;
   padding: 10px 0px;
@@ -273,7 +274,7 @@ header form input:hover {
 .server .card button {
   margin-top: 10px;
   padding: 5px;
-  background-color: var(--color1);
+  background: linear-gradient(182deg, #272156, #636181);
   color: white;
   font-size: 20px;
   border: none;
@@ -322,7 +323,7 @@ header form input:hover {
 /* end about */
 /* start footer */
 footer {
-  background-color: var(--color1);
+  background: linear-gradient(182deg, #272156, #636181);
 }
 footer .container {
   display: flex;
