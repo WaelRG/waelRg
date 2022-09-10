@@ -82,6 +82,14 @@ header .logo span {
   color: #ffffffa1;
   font-size: 50px;
 }
+@media (max-width: 992px) {
+  header .logo {
+    font-size: 20px;
+  }
+  header .logo span {
+    font-size: 40px;
+  }
+}
 header ul {
   display: flex;
 }
@@ -115,6 +123,16 @@ header .mega .links li a {
 }
 header .mega .links li a:hover {
   padding-left: 8px;
+}
+@media (max-width: 992px) {
+  header .mega {
+    top: 130px;
+  }
+}
+@media (max-width: 768px) {
+  header .mega {
+    top: 130px;
+  }
 }
 
 /* end mega menew */
