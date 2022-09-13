@@ -15,6 +15,10 @@
 
 <body>
     <!-- start header  -->
+    <div class="load" id="id">
+        <span></span>
+    </div>
+
     <header>
         
         
@@ -28,20 +32,22 @@
             <ul>
                 <li>
                 <a href="#"><i class="fa-solid fa-user" onclick="myfun()" ></i></a>
+                <a href="#"><img src="" id="img" onclick="myfun()"></i></a>
                 <!-- start mega menue -->
                 <div class="mega" id="mg">
                     <ul class="links">
+                        <li><a href="" id="name"> </a></li>
                         <li><a href="#"> Home</a></li>
                         <li><a href="photo.html"> photo</a></li>
                         <li><a href="pass.html"> Edite password</a></li>
-                        <li><a href="#"> Helpe</a></li>
+                        <li><a href="help.html"> Helpe</a></li>
                         <li><a href="number.html"> Edite number</a></li>
-                        <li><a href="#"> comment</a></li>
+                        <li><a href="commint.html"> commint</a></li>
                     </ul>
                 </div>
                 <!-- end mega menue -->
                 </li>
-                <li><a href="#input"> login </a></li>
+                <li><a href="index.html"> singout </a></li>
                 <li> <a href="#Servises" > Servises </a> </li>
                 <li> <a href="#About"> About</a></li>
             </ul>
@@ -54,47 +60,110 @@
 
         </div>
     </header>
-    <script>
-        function myfun()
-        {
-            
-            var mega=document.getElementById("mg");
-           
-            if(mega.style.opacity==0 )
-            {
-                mega.style.opacity=1;
-            }
-            
-        
-            else
-            {
-            mega.style.opacity = 0;
-            }
-            if(mega.style.zIndex==100)
-            {
-                mega.style.zIndex=-4;
-            }
-            else
-            {
-                mega.style.zIndex=100;
-            }
-            if(mega.style.left=="-3px")
-            {
-                mega.style.left="30px";
-            }
-            else
-            mega.style.left="-3px";
-             
-             
-            
-            }
-            
-        
+    <!-- start server -->
+    <div class="server" id="Servises">
+        <h2 class="title">Servises</h2>
+        <div class="container">
+            <div class="card">
+                <img src="js1.png" alt="" style="width: 80%; height: 80%;">
+                <p>course html</p>
+                <a href="bynow.html"> <button>by now</button></a>
     
-          
+    
+            </div>
+            <div class="card">
+                <img src="css.webp" alt="">
+                <p>course Css</p>
+                <a href="bynow.html"><button>by now</button></a>
+    
+    
+            </div>
+            <div class="card">
+                <img src="images.png" alt="" style="width: 80%; height: 80%;">
+                <p>course Java Script</p>
+                <a href="bynow.html"> <button>by now</button></a>
+    
+    
+            </div>
+        </div>
+    
+    </div>
+    <!-- end server -->
+    <!-- start about -->
+    <div class="about" id="About">
+        <h2 class="title">
+            About
+        </h2>
+        <div class="container">
+            <img src="img75.png" alt="">
+            <div class="text">
+                <p>We always strive to achieve e-learning</p>
+                <p>Achieving job opportunities</p>
+                <p>We always strive to achieve e-learning</p>
+                <p>Achieving job opportunities</p>
+                <p>We always strive to achieve e-learning</p>
+                <p>Achieving job opportunities</p>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">Wael <span>Rg</span></a>
+            <p>&copy; wael Rg and Asmaa saber</p>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+    
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script>
+        window.onload = function () {
+            var loade = document.getElementById("id");
+            document.body.style.overflow = "hidden";
+            setTimeout(function () {
+                loade.style.display = "none";
+                document.body.style.overflow = "auto";
+            }, 5000);
+        }
+         function myfun() {
+
+                var mega = document.getElementById("mg");
+
+                if (mega.style.opacity == 0) {
+                    mega.style.opacity = 1;
+                }
+
+
+                else {
+                    mega.style.opacity = 0;
+                }
+                if (mega.style.zIndex == 100) {
+                    mega.style.zIndex = -4;
+                }
+                else {
+                    mega.style.zIndex = 100;
+                }
+                if (mega.style.left == "-3px") {
+                    mega.style.left = "30px";
+                }
+                else
+                    mega.style.left = "-3px";
+
+
+
+            }
         
-   
+
     </script>
+    </body>
+    
+    </html>
+   
     </body>
     </html>
     <!-- end header -->
