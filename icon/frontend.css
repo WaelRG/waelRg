@@ -472,6 +472,7 @@ footer .icon i {
   position: relative;
   margin: 0px;
   border-radius: 20px;
+  max-width: 100%;
 }
 .help .text p {
   font-size: 30px;
