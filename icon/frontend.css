@@ -470,7 +470,7 @@ footer .icon i {
 .help .text {
   background: #eee;
   position: relative;
-  margin: 3px;
+  margin: 0px;
   border-radius: 20px;
 }
 .help .text p {
@@ -531,7 +531,7 @@ footer .icon i {
   border-width: 20px;
   border-style: solid;
   border-color: transparent #272156 transparent transparent;
-  left: 180px;
+  left: 200px;
   top: 7px;
   transform: rotate(-91deg);
   animation: top infinite 0.5s 0.5s alternate-reverse;
@@ -544,7 +544,7 @@ footer .icon i {
   border-style: solid;
   border-color: transparent transparent transparent #272156;
   transform: rotate(89deg);
-  right: 172px;
+  right: 212px;
   top: 7px;
   animation: top infinite alternate-reverse 0.5s 0.5s;
 }
