@@ -402,6 +402,7 @@ footer .icon i {
   border-right: 1px solid blue;
   background: no-repeat;
   animation: load 1s 2s infinite reverse;
+  position: fixed;
 
   transform: rotate(55deg);
 }
@@ -414,19 +415,20 @@ footer .icon i {
   }
 }
 /* start number */
-.number {
+.photo {
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative;
 }
-.number .container {
+
+.photo .container {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.number h4 {
+.photo h4 {
   font-size: 30px;
   background: #3c3865;
   padding: 10px;
@@ -435,8 +437,155 @@ footer .icon i {
   color: WHITE;
 }
 @media (max-width: 762px) {
-  .number .container {
+  .photo .container {
     flex-direction: column;
   }
 }
+#img {
+  position: absolute;
+  width: 60px;
+
+  border-radius: 50%;
+
+  transform: translate(-50px, -10px);
+}
 /* end number */
+
+/* start help */
+.help {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.help .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.help img {
+  max-width: 100%;
+}
+.help .text {
+  background: #eee;
+  position: relative;
+  margin: 3px;
+  border-radius: 20px;
+}
+.help .text p {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #0000006e;
+  margin: 120px;
+  cursor: pointer;
+  position: relative;
+
+  display: block;
+}
+.help .text label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0000006e;
+  display: flex;
+  justify-content: center;
+}
+
+.help .text p::before {
+  content: "";
+  width: 0%;
+  height: 10%;
+  background-color: #3c3865;
+  position: absolute;
+  bottom: -50px;
+  transition: 0.5s;
+}
+.help .text p:hover::before {
+  width: 100%;
+}
+/* end help */
+/* start commint */
+.commint {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  position: relative;
+}
+.commint .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.commint h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+.commint h4::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent #272156 transparent transparent;
+  left: 180px;
+  top: 7px;
+  transform: rotate(-91deg);
+  animation: top infinite 0.5s 0.5s alternate-reverse;
+}
+.commint h4::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent transparent #272156;
+  transform: rotate(89deg);
+  right: 172px;
+  top: 7px;
+  animation: top infinite alternate-reverse 0.5s 0.5s;
+}
+@keyframes top {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.commint form textarea {
+  margin-top: 30px;
+  border-radius: 20px;
+  border-color: #3c3865;
+  width: 340px;
+  border: navajowhite;
+  border-top: 1px solid;
+
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  color: black;
+  background-color: #eee;
+  text-align: center;
+}
+.commint form textarea:focus {
+  outline: none;
+}
+.commint form {
+  display: flex;
+  flex-direction: column;
+}
+.commint form button {
+  margin-top: 30px;
+  background: #3c3865;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* end commint */
